@@ -567,6 +567,7 @@ tolerations to all daemons, to prevent DaemonSets from breaking.
 -->
 DaemonSet 控制器自动为所有守护进程添加如下 `NoSchedule` 容忍度，以防 DaemonSet 崩溃：
 
+* `node.kubernetes.io/not-ready`
 * `node.kubernetes.io/memory-pressure`
 * `node.kubernetes.io/disk-pressure`
 * `node.kubernetes.io/pid-pressure`（1.14 或更高版本）
